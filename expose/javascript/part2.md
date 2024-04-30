@@ -44,10 +44,10 @@
  ### E: `false`. Because the boolean `true` can convert to number `1`, `1 == 2` would be `false`
  ### F: `true`. Because `===` is comparing both value and type, left hand side(`true`) has the value `true` and `boolean` type, right hand side(`Boolean`) has value `true` and `boolean` type as it cast `2` to `boolean` by `Boolean(2)`, and `Boolean(2)` has value `true`. So it is true.
 ## 15. Answer: 
- ### `==` only compare value, and it would cast the type if needed. `===` compare both value and type, and it would not cast the type.
+ `==` only compare value, and it would cast the type if needed. `===` compare both value and type, and it would not cast the type.
 ## 17. Answer: The result would be `[2,4,6]`.
- ### The function `modifyArray` takes the array `[1,2,3]` and the function `doSomething` as parameter. In the function `modifyArray`, it declared a const array variable `newArr`, and in the `for` loop, we loop through the array `array` which has the value `[1,2,3]`. Then push the result that the function `doSomething` returned to the variable `newArr`. Since `doSomething` would return `num * 2`, and the for loop do that every iteration, so every element in the array `newArray` `[1,2,3]` would be `[2,4,6]`. Then return `newArr`. The result would be `[2,4,6]`.
+ The function `modifyArray` takes the array `[1,2,3]` and the function `doSomething` as parameter. In the function `modifyArray`, it declared a const array variable `newArr`, and in the `for` loop, we loop through the array `array` which has the value `[1,2,3]`. Then push the result that the function `doSomething` returned to the variable `newArr`. Since `doSomething` would return `num * 2`, and the for loop do that every iteration, so every element in the array `newArray` `[1,2,3]` would be `[2,4,6]`. Then return `newArr`. The result would be `[2,4,6]`.
 ## 19. Answer: The output would be `1, 4, 3, 2`
-### As the `setTimeout()` function is applied to the code for print the `2` and `3`, the `1` and `4` would output first. Then since `3` has 0 delay(second parameter of `setTimeout()` at line 4), `3` would output first, then output `2`.
+ As the `setTimeout()` function is applied to the code for print the `2` and `3`, the `1` and `4` would output first. Then since `3` has 0 delay(second parameter of `setTimeout()` at line 4), `3` would output first, then output `2`.
 
 
